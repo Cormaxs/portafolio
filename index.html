@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind con HTML</title>
+  
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+  <link rel="stylesheet" href="/estilos/styles.css">
+  <link rel="stylesheet" href="/estilos/efectos.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <header>
+    <div class="menu-container">
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+        <ol class="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#proyects">Proyectos</a></li>
+            <li><a href="#conatct-me">Contacto</a></li>
+        </ol>
+    </div>
+
+    <section class="sobre-mi" id="sobre-mi" >
+        <div class="container-info-sobreMi" id="home">
+            <h1>Sobre mi</h1>
+            <p>Soy un desarrollador web Full Stack apasionado por convertir ideas en realidad. 
+                Combino creatividad, dedicación y habilidades técnicas para construir soluciones efectivas y funcionales.
+
+                Con un enfoque en la excelencia y la mejora continua, me adapto rápidamente a los desafíos y siempre estoy dispuesto a aprender y crecer. 
+                Como técnico en redes informáticas, aporto un enfoque integral a cada proyecto, asegurándome de que todo funcione de manera óptima, desde el diseño hasta la implementación.
+                
+                Si buscas a alguien comprometido, responsable y orientado a resultados, ¡aquí estoy para ayudarte a alcanzar tus objetivos!
+            </p>
+            <button><a href="https://wa.me/+543834901162" target="_blank">Contactar</a></button>
+        </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="skills" id="skills">
+        <h2>
+            skills
+        </h2>
+        <div class="container-skils">
+           <section class="frontend">
+            <h3>Frontend</h3>
+        <ol>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                   
+            <i class="devicon-html5-plain colored"></i><p>Html</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                   
+            <i class="devicon-css3-plain colored"></i>
+            <p>Css</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                   
+            <i class="devicon-javascript-plain colored"></i>
+            <p>Javascript</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://v3.tailwindcss.com/" target="_blank">
+                    
+            <i class="devicon-tailwindcss-original colored"></i>
+            <p>TailwindCss</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://es.react.dev/" target="_blank">
+                    
+           
+                    <i class="devicon-react-original colored"></i>
+          
+            <p>React</p>
+                </a>
+            </li>
+            
+        </ol>
+    </section>
+    <section class="backend">
+        <h3>Backend</h3>
+        <ol>
+            <li>
+                <a href="https://nodejs.org/es" target="_blank">
+                     
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <p>NodeJS</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mongodb.com/es/lp/cloud/atlas/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-ar_ps-all_desktop_es-la_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=20378068757&adgroup=154980290281&cq_cmp=20378068757&gad_source=1&gclid=CjwKCAiAtNK8BhBBEiwA8wVt9xU9CMbV0F1sDEBM-7uotkBXNQBQHwBgGGxp7SJO4hAwcUbwbZ17tBoCU8wQAvD_BwE" target="_blank"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></a>
+            </li>
+            <li>
+                <a href="https://www.mysql.com/" target="_blank">
+                    <i class="devicon-mysql-original colored"></i>
+                  <p>Mysql</p></a>
+            </li>
+            <li>
+                <a href="https://www.php.net/" target="_blank">
+                    <i class="devicon-php-plain colored"></i>
+                  <p>Php</p></a>
+            </li>
+            
+        </ol>
+    </section>
+    <section class="extras">
+        <h3>Extras</h3>
+        <ol>
+            <li>
+                <a href="https://github.com/" target="_blank">
+                    
+            <i class="devicon-github-original colored"></i>
+            <p>Github</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://git-scm.com/" target="_blank">
+                    
+            <i class="devicon-git-plain colored"></i>
+            <p>Git</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.postman.com/" target="_blank">
+                    
+           
+                    <i class="devicon-postman-plain colored"></i>
+          
+            <p>Postman</p>
+                </a>
+            </li>
+            
+        </ol>
+    </section>
+    </div>
+    </div>
+
+    <section class="proyectos" id="proyects">
+        <h4>Mis proyectos</h4>
+      <div class= "container-proyectos">
+        <div class="items">
+            <a href="">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/project_management_coursefees.jpg" alt="">
+            <h4 class="titulo-items">Ejemplo de proyecto</h4>
+            <p class="resumen-items">Proyecto dado</p>
+        </a>
+        </div>
+        <div class="items">
+            <a href="">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/project_management_coursefees.jpg" alt="">
+            <h4 class="titulo-items">Ejemplo de proyecto</h4>
+            <p class="resumen-items">Proyecto dado</p>
+        </a>
+        </div>
+        <div class="items">
+            <a href="">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/project_management_coursefees.jpg" alt="">
+            <h4 class="titulo-items">Ejemplo de proyecto</h4>
+            <p class="resumen-items">Proyecto dado</p>
+        </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contacto" id="conatct-me">
+        <div class="container-contacto">
+           <div class="item-contacto">
+            <a href="https://www.linkedin.com/in/tomas-barros-a43a53222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="devicon-linkedin-plain colored"></i>
+            Ver linkDin
+        </a>
+           </div>
+        </div>
+    </section>
+  </main>
+
+
+</body>
+<script src="/scripts/script.js">
+
+</script>
+</html>

@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*menu*/
+.menu-container{
+    position: fixed;
+    width: 100%;
+    top: 0px;;
+    z-index: 1000;
+}
+.menu-container > ol   > li > a, .item-contacto > a{
+    transition: color 0.3s ease-in-out/* Duración y tipo de transición */
+   
+}   
+
+.menu-container > ol   > li > a:hover{
+    color: #dea23a;
+}
+/*sobre mi*/
+
+.container-info-sobreMi > button {
+    background-color: transparent;
+    width: 150px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #dea23a;
+    color: #dea23a;
+    font-family: Prompt;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Suaviza los cambios en todas las propiedades */
+}
+
+.container-info-sobreMi > button:hover {
+    background-color: #dea23a; /* Cambia el fondo al pasar el mouse */
+    color: #2b2b33; /* Cambia el color del texto para contraste */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
+
+/*skills*/
+.container-skils > section > ol > li{
+    transition: all 0.3s ease-in-out, ;
+}
+.container-skils > section > ol > li:hover{
+    background-color: #dea23a;
+     box-shadow: 2px 2px 5px rgb(39, 39, 39)a;
+}
+
+/*contacto*/
+
+.item-contacto > a:hover{
+color:#dea23a ;
+}
+
+/*proyectos*/

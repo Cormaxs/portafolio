@@ -1,0 +1,275 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    
+}
+body{
+    background-color: #34353a;
+  height: 100%;
+}
+
+/*letras*/
+h1,h2,h3{
+    font-size: clamp(24px, 5vw, 30px);
+    font-family:kanit;
+}
+h4{
+    font-size: clamp(20px, 5vw, 25px);
+    font-family:kanit;
+}
+/*Menu */
+
+/* Estilo base */
+.menu-container {
+    position: relative;
+    background-color: #2b2b33;
+    font-family: kanit;
+    padding: 1rem 0;
+}
+
+.menu-container .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+
+.menu-container .menu li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-size: clamp(18px, 5vw, 20px);
+}
+
+.menu-container .menu li a:hover {
+    color: #dea23a;
+}
+.menu-toggle{
+    display: none;
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+    .menu-container .menu {
+        display: none; /* Oculta el menú inicialmente */
+        flex-direction: column; /* Alinea los elementos en una columna */
+        position: absolute;
+        top: 100%; /* Debajo del botón toggle */
+        left: 0;
+        right: 0;
+        background-color: #2b2b33;
+        padding: 0;
+        z-index: 1000;
+    }
+    .menu-container{
+        padding: 0;
+    }
+    .menu-container .menu.show {
+        display: flex; /* Muestra el menú cuando se activa */
+        gap: 1rem;
+        padding: .2rem;
+    }
+
+    .menu-container .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 1rem .5rem;
+    }
+}
+
+
+
+
+/*Sobre Mi*/
+
+.sobre-mi{
+    margin: auto;
+    padding: 8rem 0;
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+}
+
+.container-info-sobreMi > h1{
+   text-align: center;
+   margin: 1rem ;
+   padding: .5rem 0;
+   font-family:kanit;
+ 
+}
+
+.container-info-sobreMi > p{
+    width: 95%;
+   padding-left: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+    font-family: Prompt;
+}
+
+.container-info-sobreMi > button{
+    background-color: transparent;
+    width: auto;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: solid 2px #dea23a;;
+}
+
+.container-info-sobreMi > button > a{
+  color: #ffffff;
+    text-decoration: none;
+    font-size: clamp(14px, 5vw, 16px);
+    font-weight: bolder;
+   padding: .5rem 1rem;
+}
+
+/*Skills*/
+
+
+.skills{
+  background-color: #2e2f34;
+    padding: 10rem 0;
+    
+}
+.skills > h2{
+    text-align: center;
+    color: white;
+    font-family:kanit;
+    
+}
+.container-skils > section  h3{
+  text-align: left;    color: #dea23a;
+  padding-left: .5rem;
+  font-family:kanit;
+
+  border-bottom: 1px solid #dea23a;
+}
+.container-skils > section{
+    margin-top: 1rem ;
+    
+}
+
+.container-skils > section > ol{
+    display: flex; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin: 1rem 0 1rem 0;
+    background-color: #dea23a5e;
+   border-radius: 10px;
+}
+
+.container-skils > section > ol > li {
+    list-style: none;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    min-width: 200px;
+    min-height: auto;
+    box-shadow: 2px 2px 5px #3b3b3bba;
+    font-family: Prompt;
+    flex: 1; /* Permite que los elementos ocupen el espacio disponible */
+}
+.container-skils > section > ol > li > a{
+    color: white;
+    text-decoration: none;
+}
+.container-skils  section  ol  li  a > i{
+    font-size: clamp(45px, 5vw, 70px);
+}
+.container-skils > section > ol > li > a > p{
+    font-weight: bold;
+    letter-spacing: .05rem;
+}
+
+.frontend, .backend, .extras{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+
+/*proyectos*/
+
+.proyectos{
+    margin: 1.5rem 0;
+    padding: 3rem 0;
+}
+.proyectos > h4{
+    color: #dea23a;
+   text-align: center;
+   margin: 3rem 0;
+}
+
+.container-proyectos {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+.items{
+    margin: 1rem auto;
+    background-color: #2f2e34;
+    text-align: center;
+box-shadow: 1px 1px 5px #3535357a;
+width: clamp(400px, 30%, 100%);
+border-radius: 5px 5px 0 0;
+}
+.items > a{
+    height: 100%;
+    margin: auto;
+    
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+.items  a> img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.titulo-items{
+    margin: 1rem;
+}
+
+.resumen-items{
+    margin: 1rem;
+    text-align: left;
+    font-family: Prompt;
+}
+
+/*contacto*/
+
+.contacto{
+    margin: 3rem 0;
+}
+
+.container-contacto{
+    margin: auto;
+    width: 88%;
+}
+
+.item-contacto{
+    text-align: center;
+}
+.item-contacto > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Prompt;
+    font-size: clamp(16px, 5vw, 18px);
+    font-weight: 500;
+}
+
+.devicon-linkedin-plain{
+   font-size: clamp(20px, 5vw, 25px);
+ 
+   background-color: #ffffff;
+}
